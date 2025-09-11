@@ -1,0 +1,15 @@
+:root {
+    --primary-bg-color: #eee;
+    --secondary-bg-color: #fff;
+
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+html[data-theme="dark"] {
+    --primary-bg-color: #111;
+    --secondary-bg-color: #222;
+
+    --shadow-color: #fff;
+}
