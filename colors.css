@@ -11,5 +11,5 @@ html[data-theme="dark"] {
     --primary-bg-color: #111;
     --secondary-bg-color: #222;
 
-    --shadow-color: #fff;
+    --shadow-color: rgba(255, 255, 255, 0.8);
 }

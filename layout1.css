@@ -18,3 +18,24 @@ nav a {
 nav a:visited {
     color: rgb(67, 75, 87);
 }
+
+
+
+
+
+/* Theme Toggle */
+
+label#theme-toggle-label {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+label#theme-toggle-label img {
+    width: 2rem;
+    height: 2rem;
+
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+}
