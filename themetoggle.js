@@ -6,28 +6,28 @@ if (!toggleBtn || !toggleIcon) {
     console.error("Missing toggleBtn or toggleIcon");
 } else {
     const ICONS = {
-    light: "public/sun.svg",
-    dark: "public/moon.svg"
-};
+        light: "public/sun.svg",
+        dark: "public/moon.svg"
+    };
 
-const setTheme = (theme) => {
-    html.setAttribute("data-theme", theme);
-    toggleIcon.src = ICONS[theme];
-    toggleBtn.checked = theme === "dark";
+    const setTheme = (theme) => {
+        html.setAttribute("data-theme", theme);
+        toggleIcon.src = ICONS[theme];
+        toggleBtn.checked = theme === "dark";
 
-    localStorage.setItem("theme", theme);
-}
+        localStorage.setItem("theme", theme);
+    }
 
-const init = () => {
-    const current = localStorage.getItem("theme") || "light";
-    setTheme(current);  
-}
+    const init = () => {
+        const current = localStorage.getItem("theme") || "light";
+        setTheme(current);  
+    }
 
-toggleBtn.addEventListener("change", () => {
-    const theme = toggleBtn.checked ? "dark" : "light";
-    setTheme(theme);
-});
+    toggleBtn.addEventListener("change", () => {
+        const theme = toggleBtn.checked ? "dark" : "light";
+        setTheme(theme);
+    });
 
-init();
+    init();
 }
 

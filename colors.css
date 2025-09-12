@@ -1,15 +1,81 @@
 :root {
-    --primary-bg-color: #eee;
-    --secondary-bg-color: #fff;
+    /* Generated Via colorffy.com */
 
-    --shadow-color: rgba(0, 0, 0, 0.2);
+    /** Base colors */
+    --clr-dark-a0: #000000;
+    --clr-light-a0: #ffffff;
+
+    /** Theme primary colors */
+    --clr-primary-a0: #245c45;
+    --clr-primary-a10: #30604b;
+    --clr-primary-a20: #3b6452;
+    --clr-primary-a30: #466858;
+    --clr-primary-a40: #506c5f;
+    --clr-primary-a50: #5a7065;
+
+    /** Theme surface colors */
+    --clr-surface-a0: #ffffff;
+    --clr-surface-a10: #f0f0f0;
+    --clr-surface-a20: #e1e1e1;
+    --clr-surface-a30: #d3d3d3;
+    --clr-surface-a40: #c5c5c5;
+    --clr-surface-a50: #b6b6b6;
+
+    /** Theme tonal surface colors */
+    --clr-surface-tonal-a0: #e8eeeb;
+    --clr-surface-tonal-a10: #dce1df;
+    --clr-surface-tonal-a20: #d0d5d2;
+    --clr-surface-tonal-a30: #c4c8c6;
+    --clr-surface-tonal-a40: #b8bcba;
+    --clr-surface-tonal-a50: #adafae;
+
+
+    --primary-bg-color: var(--clr-surface-a0);
+    --secondary-bg-color: var(--clr-surface-a0);
+
+    --primary-page-color: var(--clr-surface-tonal-a10);
+
+    --primary-navbar-color: var(--clr-surface-tonal-a0);
+
+    --shadow-color: var(--clr-surface-a50);
+
+    --primary-link-color: #13b436;
+    --disabled-link-color: #007419;
 }
 
 
 
 html[data-theme="dark"] {
-    --primary-bg-color: #111;
-    --secondary-bg-color: #222;
+    /* Generated Via colorffy.com */
 
-    --shadow-color: rgba(255, 255, 255, 0.8);
+    /** Base colors */
+    --clr-dark-a0: #000000;
+    --clr-light-a0: #ffffff;
+
+    /** Theme primary colors */
+    --clr-primary-a0: #245c45;
+    --clr-primary-a10: #3d6d57;
+    --clr-primary-a20: #547e6b;
+    --clr-primary-a30: #6c907e;
+    --clr-primary-a40: #83a293;
+    --clr-primary-a50: #9bb4a7;
+
+    /** Theme surface colors */
+    --clr-surface-a0: #212121;
+    --clr-surface-a10: #363636;
+    --clr-surface-a20: #4c4c4c;
+    --clr-surface-a30: #636363;
+    --clr-surface-a40: #7b7b7b;
+    --clr-surface-a50: #949494;
+
+    /** Theme tonal surface colors */
+    --clr-surface-tonal-a0: #222724;
+    --clr-surface-tonal-a10: #373b38;
+    --clr-surface-tonal-a20: #4d514e;
+    --clr-surface-tonal-a30: #646765;
+    --clr-surface-tonal-a40: #7c7f7d;
+    --clr-surface-tonal-a50: #949795;
+
+
+    --shadow-color: var(--clr-dark-a0);
 }
