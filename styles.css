@@ -1,13 +1,21 @@
 @import './colors.css';
 
+body {
+    background-color: var(--primary-page-color);
+
+    position: relative;
+
+    padding: 0;
+}
+
+
 nav {
     display: block;
-    width: 100%;
     height: 4rem;
     background-color: var(--primary-navbar-color);
-    text-align: center;
 
-    padding: auto 0;
+    padding: 0;
+    margin: 0;
     line-height: 4rem;
 }
 
@@ -26,15 +34,6 @@ nav a:hover, nav a:active {
     color: var(--hover-link-color);
 
     transform: scale(1.1) rotate(-5deg) translateY(-0.2rem);
-}
-
-
-.page-container {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--primary-page-color);
-
-    position: relative;
 }
 
 
@@ -57,7 +56,7 @@ label#theme-toggle-label img {
 
 
 /* Footer */
-body > .page-container > footer {
+body > footer {
     width: 100%;
     text-align: center;
     clear: left;
@@ -66,6 +65,6 @@ body > .page-container > footer {
 
 }
 
-body > .page-container > footer address {
+body > footer address {
     background-color: var(--secondary-bg-color);
 }
