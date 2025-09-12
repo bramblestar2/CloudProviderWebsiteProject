@@ -31,7 +31,9 @@
 
 
     --primary-bg-color: var(--clr-surface-a0);
-    --secondary-bg-color: var(--clr-surface-a0);
+    --secondary-bg-color: var(--clr-surface-a20);
+
+    --primary-text-color: var(--clr-dark-a0);
 
     --primary-page-color: var(--clr-surface-tonal-a10);
 
@@ -39,7 +41,8 @@
 
     --shadow-color: var(--clr-surface-a50);
 
-    --primary-link-color: #13b436;
+    --primary-link-color: #672eeb;
+    --hover-link-color: #06ac2a;
     --disabled-link-color: #007419;
 }
 
@@ -78,4 +81,6 @@ html[data-theme="dark"] {
 
 
     --shadow-color: var(--clr-dark-a0);
+
+    --primary-text-color: var(--clr-dark-a0);
 }

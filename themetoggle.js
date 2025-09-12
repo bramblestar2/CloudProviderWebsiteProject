@@ -1,3 +1,5 @@
+const html = document.querySelector("html");
+
 const toggleBtn = document.getElementById("theme-toggle");
 const toggleIcon = document.getElementById("theme-icon");
 
