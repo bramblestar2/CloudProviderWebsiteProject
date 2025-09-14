@@ -1,0 +1,13 @@
+{
+	admin 127.0.0.1:2020
+}
+
+:2015 {
+	bind 127.0.0.1
+	root * /home/pidevice-1/Documents/repos/CloudProviderWebsiteProject
+	file_server
+	log {
+		output file /home/pidevice-1/Documents/repos/CloudProviderWebsiteProject/caddy.access.log
+		format json
+	}
+}
