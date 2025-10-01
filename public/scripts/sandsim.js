@@ -1,6 +1,11 @@
 const canvas = document.getElementById("canvas-sandsim");
 const ctx = canvas.getContext("2d");
 
+
+const vid = document.getElementById("background-image");
+vid.currentTime = 10;
+
+
 const columns = 20;
 const rows = 20;
 const cellSize = 20;
