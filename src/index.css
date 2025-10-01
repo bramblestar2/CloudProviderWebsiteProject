@@ -5,10 +5,12 @@ html {
     margin: 0 auto;
 
     background-color: var(--primary-bg-color);
-    color: #fff;
+    color: #000;
 }
 
 body {
+    position: relative;
+
     width: 80%;
     min-height: 100%;
     margin: auto;
@@ -17,4 +19,20 @@ body {
     clear: none;
     
     box-shadow: 0 0 10px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+}
+
+
+
+html[data-theme="dark"] {
+    background-color: var(--primary-bg-color);
+    color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
