@@ -72,6 +72,7 @@ body > footer address {
 /* Header Logo */
 .header-container {
     position: relative;
+    overflow: hidden;
 }
 
 .header-container img {
@@ -80,6 +81,8 @@ body > footer address {
     height: 15em;
     object-fit: cover;
     object-position: center;
+
+    animation: header-pulse 20s infinite ease-in-out;
 }
 
 .header-container h1 {
@@ -92,4 +95,44 @@ body > footer address {
 
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    animation: header-text-pulse 20s infinite ease-in-out;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .header-container img {
+        height: 10em;
+    }
+    
+    .header-container h1 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+@keyframes header-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes header-text-pulse {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        transform: scale(1.1) translate(15px, -15px);
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
 }
