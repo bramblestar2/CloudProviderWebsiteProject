@@ -186,7 +186,6 @@ document.addEventListener("keydown", (e) => {
   }
 
   if (e.code === "KeyR") {
-    e.preventDefault();
     init();
     startGame();
   }
