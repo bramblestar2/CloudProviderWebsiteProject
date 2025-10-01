@@ -8,8 +8,8 @@ if (!toggleBtn || !toggleIcon) {
     console.error("Missing toggleBtn or toggleIcon");
 } else {
     const ICONS = {
-        light: "public/sun.svg",
-        dark: "public/moon.svg"
+        light: "../public/sun.svg",
+        dark: "../public/moon.svg"
     };
 
     const setTheme = (theme) => {
