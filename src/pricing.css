@@ -17,21 +17,6 @@ main > :nth-child(odd) {
     animation: item-slide-right 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-
-/* Page Title */
-h1#page-title {
-    text-align: center;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 18em;
-    padding: 5px;
-
-    border-radius: 0 0 10px 10px;
-    background-color: var(--primary-navbar-color);
-
-    grid-column: span 2;
-}
-
 /* Information Cards */
 article {
     background-color: #0002;
