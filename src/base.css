@@ -1,5 +1,6 @@
 @import './colors.css';
 
+/* Page */
 body {
     background-color: var(--primary-page-color);
 
@@ -9,6 +10,7 @@ body {
 }
 
 
+/* Navigation */
 nav {
     display: block;
     background-color: var(--primary-navbar-color);
@@ -37,7 +39,6 @@ nav a:hover, nav a:active {
 
 
 /* Theme Toggle */
-
 label#theme-toggle-label {
     float: right;
     margin: 1rem;
@@ -52,7 +53,7 @@ label#theme-toggle-label img {
     box-shadow: 0 0 10px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
 }
 
-
+/* Main */
 main {
     min-height: 100%;
 }
@@ -102,6 +103,7 @@ body > footer address {
 
 
 
+/* Media Queries */
 @media screen and (max-width: 600px) {
     .logo-container img {
         height: 10em;
@@ -112,8 +114,7 @@ body > footer address {
     }
 }
 
-
-
+/* Animations */
 @keyframes logo-pulse {
     0% {
         transform: scale(1);
