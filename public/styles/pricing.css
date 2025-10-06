@@ -1,28 +1,55 @@
 @import './colors.css';
 
-.container {
+main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     padding: 20px;
 }
 
-.container table {
+main table {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     border-collapse: collapse;
+
+    background-color: #0002;
+    border-radius: 5px;
 }
 
-.container table th:not(:first-child), .container table td {
+table th:not(:first-child), table td {
     padding: 10px;
     text-align: center;
     border: 1px solid var(--primary-border-color);
 }
 
-.container p {
+p {
     text-indent: 2em;
+}
+
+article {
+    text-align: center;
+    background-color: #0002;
+    border-radius: 5px;
+
+    margin: 10px auto;
+}
+
+article h3 {
+    text-align: center;
+    padding: 5px;
+    background-color: #0002;
+    border-bottom-right-radius: 5px;
+    max-width: 150px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+article p {
+    padding: 10px;
+    margin: 0;
 }
 
 
