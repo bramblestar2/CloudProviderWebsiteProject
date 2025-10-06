@@ -6,7 +6,7 @@ RUN rm -rf /usr/share/nginx/html/*
 
 # Copy site files
 # If your static build output is in ./dist, change the source accordingly:
-COPY ./src /usr/share/nginx/html
+COPY ./ /usr/share/nginx/html
 
 # Copy custom nginx config if present
 # If you didn't create nginx.conf, this line can be removed.
