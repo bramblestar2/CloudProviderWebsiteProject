@@ -8,8 +8,6 @@ main {
     padding: 20px;
 
     animation: main-fade-in 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-    animation-timeline: scroll();
 }
 
 main > :nth-child(even) {
@@ -34,52 +32,6 @@ h1#page-title {
     grid-column: span 2;
 }
 
-
-/* Table */
-table {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    border-collapse: collapse;
-
-    background-color: #0002;
-    border-radius: 10px;
-
-}
-
-table th, table td {
-    padding: 10px;
-    text-align: center;
-    background-color: #0000;
-
-    transition: background-color 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
-table th {
-    border-bottom: 1px solid var(--primary-border-color);
-    background-color: #0002;
-}
-
-table th:first-child {
-    border-radius: 10px 0 0 0;
-}
-
-table th:last-child {
-    border-radius: 0 10px 0 0;
-}
-
-table td:first-child {
-    border-right: 1px solid var(--primary-border-color);
-    transform: rotate(-25deg) skewX(-25deg);
-    letter-spacing: 0.2em;
-}
-
-table td:not(:first-child):hover {
-    background-color: #0001;
-}
-
-
-
 /* Information Cards */
 article {
     background-color: #0002;
@@ -87,6 +39,8 @@ article {
     overflow: hidden;
 
     margin: 10px auto;
+
+    transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 article h3 {
@@ -105,6 +59,11 @@ article p {
     margin: 0;
 }
 
+article:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 0 10px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+}
+
 
 /* Media Queries */
 @media screen and (max-width: 900px) {
@@ -112,8 +71,12 @@ article p {
         grid-template-columns: 1fr;
     }
     
+    h1#page-title {
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+    }
 }
-
 
 /* Animations */
 @keyframes main-fade-in {

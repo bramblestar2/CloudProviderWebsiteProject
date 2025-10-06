@@ -68,6 +68,7 @@
     --primary-link-color: #672eeb;
     --hover-link-color: #06ac2a;
     --disabled-link-color: #007419;
+    --link-background-color: #0002;
 }
 
 
@@ -124,9 +125,11 @@ html[data-theme="dark"] {
     --clr-info-a20: #92b2e5;
 
 
-    --shadow-color: var(--clr-dark-a0);
+    --shadow-color: #0008;
 
     --primary-text-color: white;
 
     --primary-border-color: #334;
+
+    --link-background-color: #fff2;
 }
