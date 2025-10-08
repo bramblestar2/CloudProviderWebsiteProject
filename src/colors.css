@@ -69,6 +69,8 @@
     --hover-link-color: #06ac2a;
     --disabled-link-color: #007419;
     --link-background-color: #0002;
+
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 
