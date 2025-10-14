@@ -18,7 +18,7 @@ main > :nth-child(odd) {
 }
 
 /* Information Cards */
-article {
+article.section-info {
     background-color: #0002;
     border-radius: 5px;
     overflow: hidden;
@@ -28,23 +28,21 @@ article {
     transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-article h3 {
+article.section-info h3 {
     text-align: center;
     padding: 5px;
     background-color: #0002;
-    border-bottom-right-radius: 5px;
-    max-width: 150px;
 
     margin-top: 0;
     margin-bottom: 0;
 }
 
-article p {
+article.section-info p {
     padding: 10px 20px;
     margin: 0;
 }
 
-article:hover {
+article.section-info:hover {
     transform: scale(1.03) translateY(-5px);
     box-shadow: 0 0 10px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
 }

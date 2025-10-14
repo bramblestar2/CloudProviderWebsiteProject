@@ -12,8 +12,7 @@ body {
     position: relative;
 
     width: 80%;
-    min-height: 100%;
-    margin: auto;
+    margin: 0 auto;
     padding-left: 0.9%;
     padding-right: 0.9%;
     clear: none;
