@@ -37,15 +37,6 @@ img.bg {
     opacity: 0.2;
 }
 
-@keyframes bg-move {
-    0% {
-        mask-position: -200% -200%;
-    }
-    100% {
-        mask-position: 200% 200%;
-    }
-}
-
 /* Navigation */
 nav {
     display: block;
@@ -74,6 +65,11 @@ nav a:hover, nav a:active {
 
     transform: scale(1.1) rotate(-5deg) translateY(-0.2rem);
     position: relative;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: var(--active-link-color);
 }
 
 nav a::before {
@@ -124,6 +120,8 @@ h1#page-title {
 
 /* Main */
 main {
+    display: block;
+    padding: 20px;
 }
 
 /* Footer */

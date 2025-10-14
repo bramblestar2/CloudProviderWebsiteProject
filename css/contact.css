@@ -1,0 +1,12 @@
+.unavailable {
+    display: none;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-indent: 0;
+}
+.unavailable b {
+    color: darkred;
+    font-size: 1.2em;
+}
