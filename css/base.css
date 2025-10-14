@@ -80,7 +80,7 @@ h1#page-title {
     text-align: center;
     margin: 0 auto;
     width: 80%;
-    max-width: 18em;
+    max-width: 650px;
     padding: 5px;
 
     border-radius: 0 0 10px 10px;
@@ -140,6 +140,14 @@ body > footer address {
 
 
 /* Media Queries */
+@media screen and (max-width: 900px) {
+    h1#page-title {
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .logo-container img {
         height: 10em;
