@@ -40,6 +40,7 @@ article.section-info h3 {
 article.section-info p {
     padding: 10px 20px;
     margin: 0;
+    text-indent: 2em;
 }
 
 article.section-info:hover {

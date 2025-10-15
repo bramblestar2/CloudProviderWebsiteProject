@@ -12,6 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cloud-project-website.jayfeather.dev/home">
 
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/contact.css">
@@ -42,12 +43,17 @@
         </nav>
     </header>
 
+    <h1 id="page-title">Contact Us</h1>
     <main>
+        <article>
+            <p id="page-subtitle">If you have any questions, comments, or concerns, please contact us!</p>
+        </article>
+
         <form>
             <!-- Add required after having fun with the form -->
-            <input type="text" id="name" name="name">
-            <input type="email" id="email" name="email">
-            <textarea id="message" name="message"></textarea>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
             <button type="submit">Submit</button>
         </form>
 

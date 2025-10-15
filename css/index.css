@@ -6,6 +6,8 @@ html {
 
     background-color: var(--primary-bg-color);
     color: #000;
+
+    font-family: Verdana, Geneva, Arial, sans-serif;
 }
 
 body {

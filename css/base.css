@@ -9,8 +9,21 @@ body {
     padding: 0;
 }
 
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
 p {
-    text-indent: 2em;
+    line-height: 1.5em;
 }
 
 /* Background */
@@ -164,6 +177,8 @@ body > footer address {
 
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    animation: logo-text-pulse 20s infinite ease-in-out;
 }
 
 
@@ -186,9 +201,9 @@ body > footer address {
         font-size: 1.5em;
     }
 
-    img.bg {
+    /* img.bg {
         display: none;
-    }
+    } */
 }
 
 /* Animations */
