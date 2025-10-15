@@ -1,0 +1,262 @@
+@import './colors.css';
+
+html {
+    background-color: var(--primary-bg-color);
+}
+
+/* Page */
+body {
+    background-color: var(--primary-page-color);
+
+    box-shadow: 0 0 10px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+}
+
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+/* Background */
+img.bg {
+    background-image: url('../images/bg.svg');
+
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(
+        125deg,
+        transparent 0%,
+        black 20%,
+        black 80%,
+        transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        125deg,
+        transparent 0%,
+        black 20%,
+        black 80%,
+        transparent 100%
+    );
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    opacity: 0.2;
+}
+
+/* Navigation */
+nav {
+    display: block;
+    background-color: var(--primary-navbar-color);
+
+    padding: 0;
+    margin: 0;
+    line-height: 4rem;
+}
+
+nav a {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+nav a:link, nav a:visited {
+    color: var(--primary-link-color);
+    text-decoration: none;
+    width: 10%;
+    min-width: 80px;
+    text-align: center;
+}
+
+nav a:hover, nav a:active {
+    color: var(--hover-link-color);
+
+    transform: scale(1.1) rotate(-5deg) translateY(-0.2rem);
+    position: relative;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: var(--active-link-color);
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 100%;
+    height: 40%;
+    border-radius: 5px;
+    background: var(--link-background-color);
+    z-index: -1;
+}
+nav a:hover::before {
+    animation: nav-link-pulse 0.5s ease-in forwards;
+}
+
+
+/* Theme Toggle */
+label#theme-toggle-label {
+    float: right;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+label#theme-toggle-label img {
+    width: 2rem;
+    height: 2rem;
+
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+}
+
+/* Page Title */
+h1#page-title {
+    text-align: center;
+
+    background-color: var(--primary-navbar-color);
+}
+
+/* Footer */
+body > footer {
+    text-align: center;
+    line-height: 2em;
+    color: var(--primary-text-color);
+}
+
+body > footer address {
+    background-color: var(--secondary-bg-color);
+}
+
+
+/* Header */
+.header-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-container img {
+    display: block;
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+    object-position: center;
+
+    animation: header-pulse 20s infinite ease-in-out;
+}
+
+.header-container h1 {
+    margin: 0;
+    padding: 0;
+    
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    animation: header-text-pulse 20s infinite ease-in-out;
+}
+
+
+/* Animations */
+@keyframes header-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes header-text-pulse {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        transform: scale(1.1) translate(15px, -15px);
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+@keyframes nav-link-pulse {
+    0% {
+        right: 90%;
+        left: 20%;
+        opacity: 0;
+    }
+    25% {
+        right: 50%;
+        left: 20%;
+        opacity: 1;
+    }
+    50% {
+        right: 20%;
+        left: 20%;
+        opacity: 1;
+    }
+    75% {
+        right: 20%;
+        left: 50%;
+        opacity: 1;
+    }
+    100% {
+        right: 20%;
+        left: 80%;
+        opacity: 0;
+    }
+}
+
+
+
+/* Media Queries */
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+    .header-container h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) {
+    h1#page-title {
+        border-radius: 10px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+    
+
+    /* img.bg {
+        display: none;
+    } */
+}
+
+
+/* Dark Theme */
+html[data-theme="dark"] {
+    color: #fff;
+}

@@ -54,12 +54,6 @@ article.section-info:hover {
     main {
         grid-template-columns: 1fr;
     }
-    
-    h1#page-title {
-        width: 100%;
-        max-width: none;
-        border-radius: 0;
-    }
 }
 
 /* Animations */
