@@ -12,5 +12,7 @@ Media Queries
 
 - Mobile Devices
   - 0px - 480px
-- Tablet and Desktop
-  - 481px +
+- Tablet
+  - 481px - 768px
+- Desktop
+  - 769px +
