@@ -122,4 +122,8 @@ form textarea {
     form textarea {
         grid-column: span 1;
     }
+
+    .unavailable {
+        grid-column: span 1;
+    }
 }
