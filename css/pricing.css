@@ -3,7 +3,7 @@
 /* Main Content */
 main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px;
 
@@ -49,13 +49,6 @@ article.section-info:hover {
 }
 
 
-/* Media Queries */
-@media screen and (max-width: 900px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Animations */
 @keyframes main-fade-in {
     from { 
@@ -87,5 +80,22 @@ article.section-info:hover {
     to { 
         opacity: 1; 
         transform: translateX(0);
+    }
+}
+
+
+/* Media Queries */
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) {
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

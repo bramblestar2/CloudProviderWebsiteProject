@@ -152,11 +152,7 @@ body > footer address {
 }
 
 .header-container img {
-    display: block;
-    width: 100%;
-    height: 15em;
-    object-fit: cover;
-    object-position: center;
+    
 
     animation: header-pulse 20s infinite ease-in-out;
 }
