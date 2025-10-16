@@ -138,7 +138,7 @@ body > footer {
 
 @media screen and (min-width: 481px) {
     body {
-        width: 80%;
+        width: 90%;
     }
 
     h1#page-title {
@@ -152,11 +152,11 @@ body > footer {
 }
 
 @media screen and (min-width: 769px) {
+    body {
+        width: 80%;
+    }
+
     .header-container img {
         height: 15em;
     }
-
-    /* img.bg {
-        display: none;
-    } */
 }

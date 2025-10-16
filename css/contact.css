@@ -3,6 +3,7 @@ main {
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px;
+    width: 100%;
 }
 
 
@@ -140,15 +141,15 @@ form textarea {
     form textarea {
         grid-column: span 2;
     }
+
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* Desktop */
 @media screen and (min-width: 769px) {
     main {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    form {
         grid-template-columns: repeat(2, 1fr);
     }
 
