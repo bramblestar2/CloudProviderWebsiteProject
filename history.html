@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/base_style.css" />
 
     <script defer src="js/themetoggle.js" type="module"></script>
+    <script defer src="js/mobilemenu.js" type="module"></script>
 </head>
 <body>
     <img class="bg"/>
@@ -20,17 +21,24 @@
             <h1>History of The Cloud</h1>
         </div>
 
-        <label id="theme-toggle-label">
-            <input type="checkbox" id="theme-toggle" hidden/>
-            <img id="theme-icon" src="images/sun.svg" alt="Theme Toggle" />
-        </label>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="history.html" class="active">History</a>
-            <a href="uses.html">Uses</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="nav-container">
+            <button id="mobile-menu-button">
+                <img src="images/hamburger.svg" alt="Mobile Menu" />
+            </button>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="history.html" class="active">History</a>
+                <a href="uses.html">Uses</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <label id="theme-toggle-label">
+                <input type="checkbox" id="theme-toggle" hidden/>
+                <img id="theme-icon" src="images/sun.svg" alt="Theme Toggle" />
+            </label>
+        </div>
     </header>
 
     <h1 id="page-title">History of Cloud Service Providers</h1>
