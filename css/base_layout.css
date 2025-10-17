@@ -201,8 +201,8 @@ body > footer {
         display: block;
         position: absolute;
         top: 30%;
-        left: 0;
-        right: 100%;
+        left: 10%;
+        right: 10%;
         height: 40%;
         z-index: -1;
     }
