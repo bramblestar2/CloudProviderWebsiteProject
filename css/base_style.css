@@ -150,13 +150,6 @@ body > footer address {
 }
 
 .header-container h1 {
-    margin: 0;
-    padding: 0;
-    
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
@@ -225,16 +218,20 @@ body > footer address {
     .header-container h1 {
         font-size: 1.5em;
     }
+
+    h1#page-title {
+        border-top: 1px solid var(--primary-border-color);
+    }
+
+    nav a {
+        line-height: 3.0em;
+    }
 }
 
 /* Tablet */
 @media screen and (min-width: 481px) {
     h1#page-title {
         border-radius: 10px;
-    }
-
-    #mobile-menu-button {
-        display: none;
     }
 }
 
