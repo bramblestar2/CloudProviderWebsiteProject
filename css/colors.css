@@ -71,6 +71,10 @@
     --disabled-link-color: #007419;
     --link-background-color: #0002;
 
+    --link-first-nth-bg-color: #0002;
+    --link-second-nth-bg-color: #0004;
+
+
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 

@@ -1,5 +1,5 @@
 main {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px;
@@ -47,7 +47,7 @@ form textarea {
 
 
 
-.unavailable {
+#unavailable {
     display: none;
     color: red;
     font-weight: bold;
@@ -57,7 +57,7 @@ form textarea {
 
     grid-column: span 2;
 }
-.unavailable b {
+#unavailable b {
     color: rgb(168, 19, 19);
     font-size: 1.2em;
 }
@@ -108,15 +108,9 @@ form textarea {
     }
 }
 
-
-
-
 /* Media Queries */
-@media screen and (max-width: 600px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
     form {
         grid-template-columns: 1fr;
     }
@@ -125,15 +119,9 @@ form textarea {
         grid-column: span 1;
     }
 
-    .unavailable {
+    #unavailable {
         grid-column: span 1;
     }
-}
-
-
-/* Media Queries */
-/* Mobile Devices */
-@media screen and (max-width: 480px) {
 }
 
 /* Tablet */
@@ -150,10 +138,11 @@ form textarea {
 /* Desktop */
 @media screen and (min-width: 769px) {
     main {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .unavailable {
+    #unavailable {
         grid-column: span 2;
     }
 }

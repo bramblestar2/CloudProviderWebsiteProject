@@ -8,14 +8,7 @@ html {
 
 /* Page Body */
 body {
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "page-title page-title"
-    "main main"
-    "footer footer"
-    ;
-
+    display: block;
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -24,9 +17,6 @@ body {
 
 /* Background */
 img.bg {
-    background-size: cover;
-    background-position: center;
-
     position: fixed;
     top: 0;
     left: 0;
@@ -37,7 +27,6 @@ img.bg {
 
 /* Header */
 header {
-    grid-area: header;
 }
 
 
@@ -45,7 +34,13 @@ header {
 
 .nav-container {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+
+    grid-template-areas: 
+        "menubtn themebtn"
+        "nav nav";
+
     align-items: start;
 }
 
@@ -54,27 +49,20 @@ nav {
     display: none;
     padding: 0;
     margin: 0;
+
+    grid-area: nav;
 }
 
 nav a {
     display: inline-block;
 }
 
-nav a:link, nav a:visited {
-    width: 10%;
-    min-width: 80px;
-}
-
-nav a:hover, nav a:active {
-    transform: scale(1.1) rotate(-5deg) translateY(-0.2rem);
-    position: relative;
-}
-
 /* Mobile Button Menu */
 #mobile-menu-button {
     display: block;
-    float: left;
     margin: .8rem;
+    grid-area: menubtn;
+    justify-self: start;
 }
 
 #mobile-menu-button img {
@@ -86,6 +74,7 @@ nav a:hover, nav a:active {
 /* Theme Toggle */
 label#theme-toggle-label {
     /* float: right; */
+    grid-area: themebtn;
     margin: 1rem;
     justify-self: end;
 }
@@ -102,7 +91,6 @@ h1#page-title {
     width: 100%;
     max-width: 650px;
     padding: 5px;
-    grid-area: page-title;
 }
 
 
@@ -118,7 +106,6 @@ main {
 body > footer {
     width: 100%;
     clear: left;
-    grid-area: footer;
 }
 
 
@@ -161,19 +148,18 @@ body > footer {
 
     /* Navigation */
     nav {
-        margin-top: 1em;
         margin-bottom: 1em;
     }
 
     nav a {
         display: block;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
+        width: 100%;
     }
 
-    .open {
-        display: grid;
-        justify-items: center;
+    nav.open {
+        display: block;
     }
 }
 
@@ -192,8 +178,23 @@ body > footer {
     }
 
     /* Navigation */
+    .nav-container {
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "nav themebtn";
+    }
+
     nav {
         display: block;
+    }
+
+    nav a:link, nav a:visited {
+        width: 10%;
+        min-width: 80px;
+    }
+
+    nav a:hover, nav a:active {
+        transform: scale(1.1) rotate(-5deg) translateY(-0.2rem);
+        position: relative;
     }
 
     nav a::before {
@@ -209,6 +210,7 @@ body > footer {
     #mobile-menu-button {
         display: none;
     }
+    
 }
 
 @media screen and (min-width: 769px) {
