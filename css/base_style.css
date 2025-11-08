@@ -106,6 +106,13 @@ nav#main-nav > a:hover::before {
 }
 
 
+/* Forms */
+
+fieldset {
+    border-color: var(--primary-border-color);
+}
+
+
 /* Theme Toggle */
 label#theme-toggle-label {
     float: right;

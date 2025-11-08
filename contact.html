@@ -53,16 +53,46 @@
     <h1 id="page-title">Contact Us</h1>
     
     <main>
-        <article>
-            <p id="page-subtitle">If you have any questions, comments, or concerns, please contact us!</p>
-        </article>
+        <form id="contactForm">
+            <fieldset id="userInfo">
+                <legend>Contact Information</legend>
 
-        <form>
-            <!-- Add required after having fun with the form -->
-            <input type="text" id="name" name="name" placeholder="Full Name" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-            <button type="submit">Submit</button>
+                <div class="formRow">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" placeholder="First and Last name" required>
+                </div>
+                <div class="formRow">
+                    <label for="mail">E-Mail <span class="required">*</span></label>
+                    <input type="email" id="mail" placeholder="example@example.com" required>
+                </div>
+                <div class="formRow">
+                    <label for="userState">State</label>
+                    <input type="text" id="userState" value="FL">
+                </div>
+                <div class="formRow">
+                    <label for="userCity">City</label>
+                    <input type="text" id="userCity" value="Tampa">
+                </div>
+
+                <div class="formRow">
+                    <label>Was this website helpful?</label>
+                    <fieldset class="optGroup">
+                        <label for="hYes">Yes</label>
+                        <input name="hHelpful" id="hYes" value="yes" type="radio">
+
+                        <label for="hNo">No</label>
+                        <input name="hHelpful" id="hNo" value="no" type="radio">
+                    </fieldset>
+                </div>
+
+                <label for="commBox">Let us know about any questions you have!</label>
+                <textarea id="commBox"></textarea>
+            </fieldset>
+
+            <div id="buttons">
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Reset"/>
+            </div>
         </form>
 
         <p id="unavailable">

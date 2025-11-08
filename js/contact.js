@@ -1,4 +1,4 @@
-const form = document.querySelector('form');
+const form = document.getElementById('contactForm');
 const unavailableMessage = document.getElementById('unavailable');
 const submitSound = document.getElementById('submit-sound');
 

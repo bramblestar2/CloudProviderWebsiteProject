@@ -7,45 +7,60 @@ main {
 }
 
 
-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding: 20px;
+form#contactForm {
+    display: flex;
+    flex-flow: row wrap;
+}
 
+form#contactForm span.required {
+    color: red;
+    font-weight: bold;
+}
+
+form#contactForm > fieldset {
+    flex: 1 1 300px;
+    border-radius: 20px;
     background-color: #0002;
-    border-radius: 5px;
 }
 
-form input,
-form textarea {
-    border: 1px solid var(--primary-border-color);
-    border-radius: 5px;
-    padding: 5px;
+div.formRow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0;
+}
 
-    min-width: none;
-    max-width: none;
+div.formRow > * {
+    flex: 1 1 200px;
+}
+
+div#buttons {
+    text-align: center;
     width: 100%;
-    box-sizing: border-box;
 }
 
-form button {
-    padding: 5px;
-    border: none;
+fieldset.optGroup {
     border-radius: 5px;
-
-    max-width: 100px;
-    width: 80%;
+    background-color: #0002;
 }
 
-form textarea {
-    resize: none;
-    height: 50px;
+input[type='submit'],
+input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
 
-    grid-column: span 1;
+    border-radius: 20px;
 }
 
 
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 95%;
+}
+
+
+/* Silly Stuff */ 
 
 #unavailable {
     display: none;
@@ -111,38 +126,17 @@ form textarea {
 /* Media Queries */
 /* Mobile Devices */
 @media screen and (max-width: 480px) {
-    form {
-        grid-template-columns: 1fr;
-    }
-
-    form textarea {
-        grid-column: span 1;
-    }
-
-    #unavailable {
-        grid-column: span 1;
-    }
 }
 
 /* Tablet */
 @media screen and (min-width: 481px) {
-    form textarea {
-        grid-column: span 2;
-    }
-
-    form {
-        grid-template-columns: 1fr 1fr;
+    main {
+        min-width: 400px;
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
 /* Desktop */
 @media screen and (min-width: 769px) {
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #unavailable {
-        grid-column: span 2;
-    }
 }
