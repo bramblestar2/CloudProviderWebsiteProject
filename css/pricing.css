@@ -62,24 +62,44 @@ table.cost {
     margin: 5px;
 
     place-self: start center;
+    border-collapse: collapse;
+
+    transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 table.cost th, table.cost td {
     text-align: center;
     background-color: #0000;
-    min-height: 50px;
-    height: 50px;
-    max-height: 50px;
+    min-height: 80px;
+    height: 80px;
+    max-height: 80px;
+
+    transition: background-color 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 table.cost thead {
     background-color: #0002;
 }
 
-table.cost tbody th {
-    background-color: #0001;
+table.cost thead th:not(:first-child) {
+    border-bottom: 1px solid var(--primary-border-color);
 }
 
+table.cost tbody th {
+    background-color: #0001;
+    border-right: 1px solid var(--primary-border-color);
+}
+
+table.cost tbody th span {
+    display: inline-block;
+    transform: rotate(-25deg) skewX(-25deg);
+    letter-spacing: 0.2em;
+}
+
+
+table.cost tbody td:hover {
+    background-color: #0001;
+}
 
 
 /* Animations */
