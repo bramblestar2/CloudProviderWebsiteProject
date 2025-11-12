@@ -1,4 +1,7 @@
+
+
 /* Table */
+/*
 table.basic {
     width: 100%;
     max-width: 400px;
@@ -40,13 +43,14 @@ table.basic td:first-child {
     letter-spacing: 0.2em;
 }
 
+*/
 /* Disregard the first column and select all other columns */
-table.basic td:not(:first-child):hover {
+/* table.basic td:not(:first-child):hover {
     background-color: #0001;
 }
 
 table.basic:hover {
     transform: scale(1.02);
     box-shadow: 0 0 10px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
-}
+} */
 

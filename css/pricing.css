@@ -50,7 +50,35 @@ article.section-info:hover {
 
 
 /* Table */
+table.cost {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 
+    background-color: #0002;
+    border-radius: 10px;
+
+    overflow: hidden;
+    margin: 5px;
+
+    place-self: start center;
+}
+
+table.cost th, table.cost td {
+    text-align: center;
+    background-color: #0000;
+    min-height: 50px;
+    height: 50px;
+    max-height: 50px;
+}
+
+table.cost thead {
+    background-color: #0002;
+}
+
+table.cost tbody th {
+    background-color: #0001;
+}
 
 
 
