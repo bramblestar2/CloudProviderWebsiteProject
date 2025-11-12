@@ -1,0 +1,46 @@
+#image-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    list-style: none;
+}
+
+#image-nav ul li {
+    position: relative;
+
+    flex: 1 1 150px;
+}
+
+#image-nav ul li img {
+    object-fit: cover; 
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: block;
+
+    padding: 0;
+    margin: 0;
+}
+
+#image-nav ul li span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 80%;
+
+    color: white;
+    background-color: #0005;
+    font-size: 1.1em;
+
+    transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+}
+
+
+#image-nav li:hover span {
+    top: 60%;
+    font-size: 1.4em;
+}

@@ -45,7 +45,7 @@ header {
 }
 
 
-nav {
+nav#main-nav {
     display: none;
     padding: 0;
     margin: 0;
@@ -53,7 +53,7 @@ nav {
     grid-area: nav;
 }
 
-nav > a {
+nav#main-nav > a {
     display: inline-block;
 }
 
@@ -151,14 +151,14 @@ body > footer {
         margin-bottom: 1em;
     }
 
-    nav > a {
+    nav#main-nav > a {
         display: block;
         margin: 0 auto;
         padding: 0;
         width: 100%;
     }
 
-    nav.open {
+    nav#main-nav.open {
         display: block;
     }
 }
@@ -183,21 +183,21 @@ body > footer {
         grid-template-areas: "nav themebtn";
     }
 
-    nav {
+    nav#main-nav {
         display: block;
     }
 
-    nav > a:link, nav > a:visited {
+    nav#main-nav > a:link, nav > a:visited {
         width: 10%;
         min-width: 80px;
     }
 
-    nav > a:hover, nav > a:active {
+    nav#main-nav > a:hover, nav > a:active {
         transform: scale(1.1) rotate(-5deg) translateY(-0.2rem);
         position: relative;
     }
 
-    nav > a::before {
+    nav#main-nav > a::before {
         display: block;
         position: absolute;
         top: 30%;
