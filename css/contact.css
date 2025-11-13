@@ -59,6 +59,31 @@ textarea {
     width: 95%;
 }
 
+form#contactForm.fall-off {
+    transform-origin: top left;
+    animation: form-fall-off 10s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@keyframes form-fall-off {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(10px) rotate(45deg);
+    }
+    50% {
+        transform: translateY(13px) rotate(49deg);
+    }
+    80% {
+        transform: translateY(15px) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(200vh) rotate(75deg);
+        opacity: 0;
+    
+    }
+}
 
 /* Silly Stuff */ 
 

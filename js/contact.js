@@ -7,6 +7,7 @@ const submitSound = document.getElementById('submit-sound');
 // Could make it where the sound has a 50/50 chance of playing a different sound
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+    form.classList.add('fall-off');
     unavailableMessage.style.display = 'block';
     submitSound.play();
 });
