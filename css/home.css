@@ -9,6 +9,7 @@
     position: relative;
 
     flex: 1 1 150px;
+    overflow: hidden;
 }
 
 #image-nav ul li img {
@@ -19,6 +20,8 @@
 
     padding: 0;
     margin: 0;
+
+    transition: transform 0.2s cubic-bezier(.25, .88, .26, .88);
 }
 
 #image-nav ul li span {
@@ -40,7 +43,11 @@
 }
 
 
-#image-nav li:hover span {
+#image-nav ul li:hover span {
     top: 60%;
     font-size: 1.4em;
+}
+
+#image-nav ul li:hover img {
+    transform: scale(1.2) rotate(15deg);
 }
