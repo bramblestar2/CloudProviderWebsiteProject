@@ -101,6 +101,11 @@ table.cost tbody td:hover {
     background-color: #0001;
 }
 
+table.cost:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px 0 var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
+}
+
 
 /* Animations */
 @keyframes main-fade-in {
