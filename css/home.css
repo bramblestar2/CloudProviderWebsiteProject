@@ -49,5 +49,46 @@
 }
 
 #image-nav ul li:hover img {
-    transform: scale(1.2) rotate(15deg);
+    transform: scale(1.4) rotate(15deg);
+}
+
+#videoSection p {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#videoSection iframe {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+
+/* Media Queries */
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+    #videoSection iframe {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) {
+    #videoSection iframe {
+        width: 90%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+    #videoSection iframe {
+        width: 80%;
+    }
 }
