@@ -27,6 +27,10 @@ p {
     line-height: 1.5em;
 }
 
+main {
+    animation: main-fade-in 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
 /* Background */
 img.bg {
     background-image: url('../images/bg.svg');
@@ -168,6 +172,17 @@ body > footer address {
 
 
 /* Animations */
+@keyframes main-fade-in {
+    from { 
+        opacity: 0;
+        transform: translateY(20px) scale(0.9); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1);
+    }
+}
+
 @keyframes header-pulse {
     0% {
         transform: scale(1);

@@ -7,7 +7,6 @@ main {
     grid-gap: 20px;
     padding: 20px;
 
-    animation: main-fade-in 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 main > :nth-child(even) {
@@ -108,17 +107,6 @@ table.cost:hover {
 
 
 /* Animations */
-@keyframes main-fade-in {
-    from { 
-        opacity: 0;
-        transform: translateY(20px) scale(0.9); 
-    }
-    to { 
-        opacity: 1; 
-        transform: translateY(0) scale(1);
-    }
-}
-
 @keyframes item-slide-right {
     from { 
         opacity: 0;

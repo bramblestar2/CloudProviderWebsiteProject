@@ -67,6 +67,7 @@ form#contactForm.fall-off {
 @keyframes form-fall-off {
     0% {
         transform: translateY(0);
+        display: flex;
     }
     10% {
         transform: translateY(10px) rotate(45deg);
@@ -78,10 +79,12 @@ form#contactForm.fall-off {
         transform: translateY(15px) rotate(45deg);
         opacity: 1;
     }
-    100% {
+    99% {
         transform: translateY(200vh) rotate(75deg);
+    }
+    100% {
+        display: none;
         opacity: 0;
-    
     }
 }
 
