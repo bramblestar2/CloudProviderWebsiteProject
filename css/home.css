@@ -1,3 +1,8 @@
+main > hr {
+    margin: 50px 0;
+}
+
+
 #image-nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -53,22 +58,51 @@
     animation: menu-image-pulse 10s ease-in-out infinite;
 }
 
-#videoSection p {
+
+
+#videosArticle {
+    width: 100%;
+}
+
+#videosArticle h2 {
     text-align: center;
+    margin-bottom: 50px;
+}
+
+#videosArticle .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+#videosArticle .card {
+    text-align: center;
+    flex: 1 1 350px;
+    width: 150px;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #0002;
+}
+
+
+#videosArticle p {
     margin: 0;
     padding: 10px;
     font-size: 1.2em;
+
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 10px;
 }
 
-#videoSection iframe {
+#videosArticle iframe {
     display: block;
-    margin: 0 auto;
+    width: 100%;
     height: auto;
     aspect-ratio: 16/9;
-}
-
-hr {
-    margin: 50px 0;
 }
 
 
@@ -90,21 +124,12 @@ hr {
 /* Media Queries */
 /* Mobile Devices */
 @media screen and (max-width: 480px) {
-    #videoSection iframe {
-        width: 100%;
-    }
 }
 
 /* Tablet */
 @media screen and (min-width: 481px) {
-    #videoSection iframe {
-        width: 90%;
-    }
 }
 
 /* Desktop */
 @media screen and (min-width: 769px) {
-    #videoSection iframe {
-        width: 80%;
-    }
 }
