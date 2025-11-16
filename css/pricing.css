@@ -16,6 +16,34 @@ main > :nth-child(odd) {
     animation: item-slide-right 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+section {
+    align-self: center;
+}
+
+section > p {
+    text-align: center;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px 0 var(--shadow-color);
+
+    aspect-ratio: 1/1;
+
+    transition: transform 0.2s cubic-bezier(.25, .88, .26, .88);
+}
+
+section img:hover {
+    transform: scale(1.03) translateY(-5px);
+}
+
 /* Information Cards */
 article.section-info {
     background-color: #0002;
