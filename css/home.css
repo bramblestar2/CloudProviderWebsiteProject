@@ -105,6 +105,19 @@ main > hr {
     aspect-ratio: 16/9;
 }
 
+#videosArticle a {
+    color: #2e80eb;
+    text-decoration: none;
+}
+
+#videosArticle a:visited {
+    color: #672eeb;
+}
+
+#videosArticle a:hover {
+    color: #06ac2a;
+}
+
 
 /* Animations */
 @keyframes menu-image-pulse {
