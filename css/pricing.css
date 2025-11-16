@@ -28,14 +28,14 @@ section img {
     display: block;
     margin: 0 auto;
     object-fit: cover;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     max-width: 400px;
     max-height: 400px;
+    min-width: none;
+    min-height: none;
     border-radius: 20px;
     box-shadow: 0 6px 20px 0 var(--shadow-color);
-
-    aspect-ratio: 1/1;
 
     transition: transform 0.2s cubic-bezier(.25, .88, .26, .88);
 }
@@ -161,6 +161,10 @@ table.cost:hover {
 /* Media Queries */
 /* Mobile Devices */
 @media screen and (max-width: 480px) {
+    section img {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
 
 /* Tablet */
