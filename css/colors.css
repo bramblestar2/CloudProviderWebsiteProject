@@ -1,3 +1,13 @@
+/*
+History of Cloud Service Providers
+ITC Project
+
+Date:   11/18/2025
+
+Filename: colors.css
+*/
+
+
 :root {
     /* Generated Via colorffy.com */
 
@@ -65,7 +75,7 @@
 
     --shadow-color: var(--clr-surface-a50);
 
-    --primary-link-color: #672eeb;
+    --primary-link-color: #06b800;
     --hover-link-color: #06ac2a;
     --active-link-color: #004d12;
     --disabled-link-color: #007419;
@@ -138,5 +148,10 @@ html[data-theme="dark"] {
 
     --primary-border-color: #334;
 
+    
+    --primary-link-color: #1dff16;
+    --hover-link-color: #06ac2a;
+    --active-link-color: #107427;
+    --disabled-link-color: #007419;
     --link-background-color: #fff2;
 }
