@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <img class="bg" />
+    <img class="bg" alt="" />
 
     <header>
         <div class="header-container">
@@ -25,7 +25,7 @@
         </div>
 
         <div class="nav-container">
-            <button id="mobile-menu-button">
+            <button id="mobile-menu-button" aria-label="Open navigation menu">
                 <img src="images/hamburger.svg" alt="Mobile Menu" />
             </button>
 
@@ -37,7 +37,7 @@
                 <a href="contact.html">Contact</a>
             </nav>
 
-            <label id="theme-toggle-label">
+            <label id="theme-toggle-label" for="theme-toggle">
                 <input type="checkbox" id="theme-toggle" hidden />
                 <img id="theme-icon" src="images/sun.svg" alt="Theme Toggle" />
             </label>
@@ -47,19 +47,205 @@
     <h1 id="page-title">History of Cloud Service Providers</h1>
 
     <main>
+        <!-- Overview: centered card -->
+        <section class="overview">
+            <article class="section-info">
+                <h3>Overview</h3>
+                <p>
+                    Cloud computing didn’t appear overnight. It grew out of earlier ideas about sharing computing power,
+                    connecting machines over long distances, and delivering software through the internet. Over time,
+                    those ideas evolved into the large-scale cloud platforms we use today.
+                </p>
+            </article>
+        </section>
 
-        <p>Before Cloud Computing was invented, we had its predecessor, Grid Computing. Grid Computing was made up of a
-            cluster of machines that were connected to several locations. </p>
-        <p>They were mainly used by Scientists and Engineers
-            at the time, since they needed the extra computation power to complete and solve complex mathematical or
-            scientific problems.</p>
-        <p>When the internet continued to grow, in 2006, the first publicly used Cloud Service
-            Provider was made, a IaaS hosted by Amazons Web Services (AWS). It helped businesses to manage the costs of
-            having to invest in physical machines and maintain their own servers.</p>
-        <p>Soon after the creation of AWS, Google
-            followed along with Google Cloud, with Microsoft coming along with Microsoft Azure. After some time, these
-            services would build up their tools, offering machine learning, analytics, and security solutions.</p>
+        <!-- Early Foundations: card left, image placeholder right -->
+        <section class="early-foundations">
+            <article class="section-info">
+                <h3>Early Foundations: Mainframe and Grid Computing</h3>
+                <p>
+                    Before modern cloud computing existed, organizations relied on large mainframe computers and, later,
+                    grid computing systems.
+                </p>
+                <p>
+                    <strong>Mainframes</strong> (from the 1960s onward) allowed many users to connect to a single
+                    powerful
+                    computer at the same time. Users typically worked on “dumb terminals” that depended entirely on the
+                    central machine. This was an early example of shared computing resources.
+                </p>
+                <p>
+                    <strong>Grid computing</strong> (1990s–early 2000s) connected clusters of computers across multiple
+                    locations so they could work together on massive problems. These grids were especially useful for:
+                </p>
+                <ul>
+                    <li>Climate and weather modeling</li>
+                    <li>Particle physics experiments</li>
+                    <li>Large-scale engineering simulations</li>
+                    <li>Complex mathematical calculations</li>
+                </ul>
+                <p>
+                    The idea of pooling distributed resources in grid computing directly influenced how cloud computing
+                    would later be designed.
+                </p>
+            </article>
 
+            <div class="right-column">
+                <img src="images/ibm_mainframe.jpg" alt="Illustration of mainframe and grid computing"
+                    class="history-image" />
+            </div>
+        </section>
+
+        <!-- Birth of Modern Cloud Computing -->
+        <section class="birth-cloud">
+            <article class="section-info">
+                <h3>Birth of Modern Cloud Computing (2000–2006)</h3>
+                <p>
+                    As the internet matured, companies realized they could provide computing resources over the web
+                    instead
+                    of forcing every business to buy and maintain its own servers.
+                </p>
+                <p>
+                    In 1999, Salesforce helped popularize the idea of
+                    <strong>Software-as-a-Service (SaaS)</strong> by delivering customer relationship management (CRM)
+                    software through a web browser. Customers didn’t have to install software locally or manage their
+                    own
+                    infrastructure.
+                </p>
+                <p>
+                    In the early 2000s, Amazon began turning its internal infrastructure into products. In 2002, Amazon
+                    Web
+                    Services (AWS) launched some early tools, and in 2006, AWS released
+                    <strong>Elastic Compute Cloud (EC2)</strong>. EC2 allowed users to rent virtual machines on demand,
+                    marking the beginning of widely used
+                    <strong>Infrastructure-as-a-Service (IaaS)</strong>.
+                </p>
+                <p>
+                    This shift was revolutionary: instead of buying physical servers, businesses could pay only for the
+                    computing power and storage they needed.
+                </p>
+            </article>
+
+            <div class="right-column">
+                <img src="images/Salesforce-logo.png" alt="Salesforce logo" class="history-image" />
+            </div>
+        </section>
+
+        <!-- Big Providers -->
+        <section class="big-providers">
+            <article class="section-info">
+                <h3>The Big Cloud Providers Enter the Scene</h3>
+                <p>
+                    After AWS proved that cloud computing could work at scale, other major technology companies entered
+                    the
+                    market.
+                </p>
+                <p>
+                    <strong>Google Cloud Platform (GCP)</strong> grew out of Google’s experience running one of the
+                    world’s largest search engines. Google offered cloud storage, virtual machines, and powerful
+                    analytics
+                    tools built on its internal technologies.
+                </p>
+                <p>
+                    <strong>Microsoft Azure</strong> officially launched around 2010. It quickly became popular with
+                    organizations already using Windows Server, SQL Server, and Active Directory. Azure made it easier
+                    for
+                    traditional businesses to move their existing applications into the cloud.
+                </p>
+                <p>
+                    Other companies, such as IBM and Oracle, also introduced cloud platforms focused on large
+                    enterprises
+                    with specific performance, compliance, and database needs.
+                </p>
+            </article>
+
+            <div class="right-column">
+                <img src="images/gcp_logo.png" alt="Logo of Google Cloud" class="history-image" />
+            </div>
+        </section>
+
+        <!-- New Cloud Services -->
+        <section class="new-services">
+            <article class="section-info">
+                <h3>Rise of New Cloud Services (2010s)</h3>
+                <p>
+                    As competition increased, cloud providers expanded far beyond simple virtual machines and storage.
+                    They introduced new service models and tools to simplify development and operations.
+                </p>
+                <p>
+                    <strong>Platform-as-a-Service (PaaS)</strong> offerings gave developers ready-made environments for
+                    building and deploying applications without managing the underlying servers. This reduced the
+                    complexity of setting up databases, runtimes, and web servers.
+                </p>
+                <p>
+                    <strong>Function-as-a-Service (FaaS)</strong>, also known as serverless computing, went even
+                    further.
+                    Services like AWS Lambda (introduced in 2014) let developers run small pieces of code in response to
+                    events, without provisioning or managing any servers.
+                </p>
+                <p>
+                    Cloud providers also launched:
+                </p>
+                <ul>
+                    <li>Managed databases (SQL and NoSQL)</li>
+                    <li>Big data analytics platforms</li>
+                    <li>Machine learning and AI services</li>
+                    <li>Security, monitoring, and logging tools</li>
+                </ul>
+                <p>
+                    By the late 2010s, many everyday services—such as streaming video, social media, online gaming, and
+                    mobile apps—were heavily dependent on cloud infrastructure.
+                </p>
+            </article>
+
+            <div class="right-column">
+                <img src="images/microsoft-azure-logo.png" alt="Illustration of serverless and managed cloud services"
+                    class="history-image" />
+            </div>
+        </section>
+
+        <!-- Modern Era -->
+        <section class="modern-era">
+            <article class="section-info">
+                <h3>Modern Era (2020s–Today): Multi-Cloud and Global Scale</h3>
+                <p>
+                    Today, cloud computing is the backbone of much of the internet and modern business.
+                </p>
+                <p>
+                    Many organizations use a <strong>multi-cloud</strong> strategy, combining services from multiple
+                    providers (for example, AWS and Azure together) to increase reliability, avoid vendor lock-in, and
+                    take advantage of each platform’s strengths.
+                </p>
+                <p>
+                    <strong>Hybrid cloud</strong> models are also common. In a hybrid setup, a company might keep some
+                    sensitive systems on-premises in its own data centers while using public cloud services for other
+                    workloads. This approach balances control, security, and flexibility.
+                </p>
+                <p>
+                    <strong>Edge computing</strong> has emerged as another important trend. Instead of running all
+                    processing in a distant data center, some workloads run closer to users or devices to reduce
+                    latency.
+                    This is especially important for Internet of Things (IoT) devices, real-time applications, and
+                    autonomous systems.
+                </p>
+                <p>
+                    Finally, cloud providers now offer powerful environments for
+                    <strong>artificial intelligence and machine learning</strong>, including access to specialized
+                    hardware
+                    like GPUs and TPUs. These tools make it possible to train and deploy advanced models at a scale that
+                    would be difficult for most organizations to achieve on their own.
+                </p>
+                <p>
+                    From mainframes and grid computing to global-scale cloud platforms, the history of cloud service
+                    providers shows a steady move toward more shared, flexible, and on-demand computing. That evolution
+                    continues today as new technologies and services are built on top of the cloud.
+                </p>
+            </article>
+
+            <div class="right-column">
+                <img src="images/cloud_dia.png" alt="Modern cloud architecture with multi-cloud and edge computing"
+                    class="history-image" />
+            </div>
+        </section>
     </main>
 
     <footer>

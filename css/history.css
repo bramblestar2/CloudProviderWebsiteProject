@@ -1,0 +1,135 @@
+@import './colors.css';
+
+/* Main: vertical stack of sections */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each non-overview section: two-column grid (card left, image right) */
+main>section:not(.overview) {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 20px;
+    align-items: stretch;
+    animation: fade-slide 0.5s ease-out;
+}
+
+/* Overview section: centered card */
+section.overview {
+    display: flex;
+    justify-content: center;
+    animation: fade-slide 0.5s ease-out;
+}
+
+/* Floating cards – match pricing style */
+article.section-info {
+    background-color: #0002;
+    border-radius: 5px;
+    overflow: hidden;
+
+    margin: 10px auto;
+    max-width: 900px;
+    width: 100%;
+
+    transition:
+        transform 0.2s cubic-bezier(0.23, 1, 0.32, 1),
+        box-shadow 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+article.section-info h3 {
+    text-align: center;
+    padding: 10px;
+    background-color: #0002;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+article.section-info p {
+    padding: 15px 20px;
+    margin: 0;
+    text-indent: 2em;
+}
+
+/* Lists inside cards */
+article.section-info ul {
+    padding: 10px 40px 20px;
+    margin: 0;
+    list-style: disc;
+}
+
+article.section-info li {
+    margin-bottom: 5px;
+}
+
+/* Hover effect like pricing */
+article.section-info:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow:
+        0 0 10px 0 var(--shadow-color),
+        0 6px 20px 0 var(--shadow-color);
+}
+
+/* Right-side images */
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Right-side image styling  */
+.history-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 12px;
+    box-shadow: 0 6px 20px var(--shadow-color);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.history-image:hover {
+    transform: scale(1.04) translateY(-4px);
+    box-shadow: 0 10px 28px var(--shadow-color);
+}
+
+
+.history-image:hover {
+    transform: scale(1.03) translateY(-5px);
+}
+
+/* Animation */
+@keyframes fade-slide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive: stack card + image on small screens */
+@media (max-width: 900px) {
+    main>section:not(.overview) {
+        grid-template-columns: 1fr;
+    }
+
+    .right-column {
+        order: 2;
+        margin-top: 10px;
+    }
+
+    article.section-info {
+        max-width: 100%;
+    }
+}
