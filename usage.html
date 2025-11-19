@@ -16,16 +16,16 @@
 </head>
 
 <body>
-    <img class="bg" />
+    <img class="bg" alt="" />
 
     <header>
         <div class="header-container">
             <img src="images/Header.jpeg" alt="Cloud Header" />
-            <h1>History of The Cloud</h1>
+            <h1>Cloud Usage</h1>
         </div>
 
         <div class="nav-container">
-            <button id="mobile-menu-button">
+            <button id="mobile-menu-button" aria-label="Open navigation menu">
                 <img src="images/hamburger.svg" alt="Mobile Menu" />
             </button>
 
@@ -37,7 +37,7 @@
                 <a href="contact.html">Contact</a>
             </nav>
 
-            <label id="theme-toggle-label">
+            <label id="theme-toggle-label" for="theme-toggle">
                 <input type="checkbox" id="theme-toggle" hidden />
                 <img id="theme-icon" src="images/sun.svg" alt="Theme Toggle" />
             </label>
@@ -47,20 +47,103 @@
     <h1 id="page-title">Use Cases of Cloud Service Providers</h1>
 
     <main>
+        <!-- Overview (centered card) -->
+        <section class="overview">
+            <article class="section-info">
+                <h3>Overview</h3>
+                <p>
+                    Cloud services are used in a wide range of everyday tasks: email, file storage, streaming media,
+                    hosting websites and applications, running virtual machines, training artificial intelligence
+                    models, and much more. Both public and private clouds play important roles in modern computing.
+                </p>
+            </article>
+        </section>
 
-        <p>Cloud Services are used in a variety of ways, such as hosting Emails, Streaming Services, Virtual Machines,
-            Artificial Intelligence, Web Hosting, and more. Some notable services that are widely known and used are:
-            GMail,
-            Google Drive, DropBox, Youtube, Netflix.</p>
-        <p>These are all examples of use cases of a public cloud, but what about
-            the use cases of private clouds? Private Clouds offer more security and control over your systems as you
-            would
-            have complete control over them.</p>
-        <p>Usually Private Clouds are hosted by the organizations that will be using them,
-            but they can also be outsourced by third parties. VMware and Red Hat offer such solutions.</p>
-        <p>Some common use cases of Private Clouds are: Data Storage, Virtual Desktops</p>
+        <!-- Public Cloud Uses -->
+        <section class="public-usage">
+            <article class="section-info">
+                <h3>Public Cloud Use Cases</h3>
+                <p>
+                    Public cloud services are delivered over the internet by providers such as Amazon Web Services,
+                    Microsoft Azure, and Google Cloud Platform. Individuals and organizations rent resources rather than
+                    owning the hardware.
+                </p>
+                <p>Common public cloud uses include:</p>
+                <ul>
+                    <li><strong>Email hosting</strong> – services like Gmail and Outlook.com</li>
+                    <li><strong>File storage &amp; sharing</strong> – Google Drive, Dropbox, OneDrive</li>
+                    <li><strong>Streaming services</strong> – platforms such as YouTube and Netflix run on cloud
+                        infrastructure</li>
+                    <li><strong>Web hosting</strong> – websites and web apps hosted on cloud servers</li>
+                    <li><strong>Virtual machines</strong> – on-demand servers for development, testing, or production
+                    </li>
+                    <li><strong>AI and machine learning</strong> – cloud-based tools for training and running models
+                    </li>
+                </ul>
+            </article>
 
+            <div class="right-column">
+                <img src="images/gmail-logo.png"
+                    alt="Icons representing public cloud services like email, storage, and streaming"
+                    class="usage-image" />
+            </div>
+        </section>
 
+        <!-- Private Cloud Uses -->
+        <section class="private-usage">
+            <article class="section-info">
+                <h3>Private Cloud Use Cases</h3>
+                <p>
+                    A private cloud is dedicated to a single organization. It can be hosted in the organization’s own
+                    data center or managed by a third party, but the hardware and resources are not shared with the
+                    general public.
+                </p>
+                <p>
+                    Private clouds offer more control and can be customized to meet specific security, compliance, and
+                    performance requirements. Technologies from vendors such as VMware and Red Hat are often used to
+                    build private cloud environments.
+                </p>
+                <p>Common private cloud use cases include:</p>
+                <ul>
+                    <li><strong>Secure data storage</strong> for sensitive or regulated information</li>
+                    <li><strong>Virtual desktop infrastructure (VDI)</strong> – providing remote desktops to employees
+                    </li>
+                    <li><strong>Internal business applications</strong> that must stay on-premises</li>
+                    <li><strong>Development and testing environments</strong> with strict access controls</li>
+                </ul>
+            </article>
+
+            <div class="right-column">
+                <img src="images/home-server.JPG" alt="personal home server setup" class="usage-image" />
+            </div>
+        </section>
+
+        <!-- Comparing Public and Private Cloud Usage -->
+        <section class="comparison-usage">
+            <article class="section-info">
+                <h3>Choosing Between Public and Private Cloud</h3>
+                <p>
+                    Public clouds are typically chosen for flexibility, scalability, and cost efficiency. They are ideal
+                    when workloads change frequently, when you need to reach users around the world, or when you want to
+                    avoid managing physical infrastructure.
+                </p>
+                <p>
+                    Private clouds are preferred when data security, compliance, or strict performance requirements are
+                    the top priority. Organizations can customize their environment and maintain full control over how
+                    systems are configured and accessed.
+                </p>
+                <p>
+                    Many organizations combine both approaches in a <strong>hybrid cloud</strong> model, keeping some
+                    workloads in a private cloud while using public cloud services for others. This allows them to
+                    balance control, cost, and flexibility.
+                </p>
+            </article>
+
+            <div class="right-column">
+                <img src="images/PvPvHcloud.png" alt="Illustration comparing public, private, and hybrid cloud usage"
+                    class="usage-image" />
+            </div>
+        </section>
     </main>
 
     <footer>
